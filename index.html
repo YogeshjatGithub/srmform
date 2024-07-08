@@ -3,12 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>College Employee Details Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #2fbd8e;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            overflow: auto;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .form-container h2 {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: calc(100% - 20px);
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .form-group input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        
-    </div>
-    
+<div class="form-container">
+    <h2>College Employee Details</h2>
+    <form action="http://localhost:3000/submit" method="post">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="qualification">Qualification</label>
+            <input type="text" id="qualification" name="qualification" required>
+        </div>
+        <div class="form-group">
+            <label for="employee_id">Employee ID</label>
+            <input type="text" id="employee_id" name="employee_id" required>
+        </div>
+        <div class="form-group">
+            <label for="department">Department</label>
+            <input type="text" id="department" name="department" required>
+        </div>
+        <div class="form-group">
+            <label for="designation">Designation</label>
+            <input type="text" id="designation" name="designation" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth & Age</label>
+            <input type="text" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="address_temp">Address (Temporary)</label>
+            <input type="text" id="address_temp" name="address_temp" required>
+        </div>
+        <div class="form-group">
+            <label for="address_perm">Address (Permanent)</label>
+            <input type="text" id="address_perm" name="address_perm" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" required>
+        </div>
+        <div class="form-group">
+            <label for="alt_mobile">Alternate Mobile Number</label>
+            <input type="tel" id="alt_mobile" name="alt_mobile" required>
+        </div>
+        <div class="form-group">
+            <label for="emergency_contact">Contact Number in Emergency</label>
+            <input type="tel" id="emergency_contact" name="emergency_contact" required>
+        </div>
+        <div class="form-group">
+            <label for="pan">PAN No.</label>
+            <input type="text" id="pan" name="pan" required>
+        </div>
+        <div class="form-group">
+            <label for="aadhaar">Aadhaar No.</label>
+            <input type="text" id="aadhaar" name="aadhaar" required>
+        </div>
+        <div class="form-group">
+            <label for="joining_srm">Date of Joining in SRM ASC</label>
+            <input type="date" id="joining_srm" name="joining_srm" required>
+        </div>
+        <div class="form-group">
+            <label for="joining_service">Date of Joining in Service</label>
+            <input type="date" id="joining_service" name="joining_service" required>
+        </div>
+        <div class="form-group">
+            <label for="total_experience">Total Experience (as on 31.05.2024)</label>
+            <input type="text" id="total_experience" name="total_experience" required>
+        </div>
+        <div class="form-group">
+            <label for="break_period">Break Period</label>
+            <input type="text" id="break_period" name="break_period">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
 </body>
 </html>
